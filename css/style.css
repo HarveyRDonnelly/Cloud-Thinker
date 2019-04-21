@@ -1,0 +1,910 @@
+
+/* Set up fonts */
+
+@font-face {
+    font-family: Gadugi;
+    src: url(fonts/gadugi.ttf);
+}
+
+@font-face {
+    font-family: Gadugi Bold;
+    src: url(fonts/gadugib.ttf);
+}
+
+/* Default element styles */
+
+body {
+	padding-top: 3.5em;
+	background-color: #ffffff;
+}
+
+.content {
+	overflow: hidden;
+}
+
+.gadugi-bold {
+	font-family: Gadugi Bold;
+}
+
+/* Common page IDs/Classes */
+
+/* Body */
+
+#body-lock-scroll {
+	overflow: hidden;
+}
+
+/* Div */
+
+#div-width-100 {
+	width: 100%;
+}
+
+/* Hidden elements */
+
+#sign-in-div {
+    display: none;
+}
+
+#a-no-dec {
+	text-decoration: none;
+	color: #333333;
+}
+
+/* Themed Elements */
+
+#open-font {
+	color: #10542c;
+	font-family: Gadugi Bold;
+	font-weight: bold;
+}
+
+#dev-font {
+	color: #316582;
+	font-family: Gadugi Bold;
+	font-weight: bold;
+}
+
+/* Full page blur */
+
+.div-blur {
+	filter: blur(3px)grayscale(50);
+	margin-top: -5%;
+	margin-left: -5%;
+	width: 110%;
+	height: 110%;
+	z-index: 99;
+}
+
+/* Navbar IDs/Classes */
+
+#navbar-nobr-logo {
+	color: #555555;
+}
+
+#nav {
+	z-index: 100;
+	background-color: #ffffff;
+	color: #000000;
+	border-bottom: solid 2.5px #dddddd;
+}
+
+#navbar-a {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+#nav-account {
+	color: #444444;
+	font-family: Gadugi;
+}
+
+.navbar-toggle {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.navbar-toggle:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.navbar-toggle:hover .icon-bar {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #000000;
+}
+
+/* Navbar link IDs/Classes */
+
+#navbar-a-home {
+	background: #ffffff;
+	color: #222222;
+}
+
+#navbar-a-open {
+	background: #ffffff;
+	color: #222222;
+}
+
+#navbar-a-academic {
+	background: #ffffff;
+	color: #222222;
+}
+
+#navbar-a-enterprise {
+	background: #ffffff;
+	color: #222222;
+}
+
+#navbar-a-home:hover {
+	background: #999999;
+	color: #ffffff;
+}
+
+#navbar-a-open:hover {
+	background: #10542c;
+	color: #ffffff;
+}
+
+#navbar-a-academic:hover {
+	background: #d88527;
+	color: #ffffff;
+}
+
+#navbar-a-enterprise:hover {
+	background: #316582;
+	color: #ffffff;
+}
+
+/* Index IDs/Classes */
+
+.index-div {
+	background-color: #ffffff;
+	padding: 1em;
+}
+
+.index-img-banner {
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+
+#index-email-form {
+	background-image: url("/img/contact-us.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	padding: 1em;
+	text-align: center;
+	font-family: Gadugi Bold;
+	color: #ffffff;
+}
+
+#index-email-div {
+	margin: auto;
+}
+
+#contact-us {
+	font-size: 3em;
+}
+
+/* Index My Account IDs/Classes */
+
+#my-account-body {
+	padding: 1em;
+	padding-top: 3.5em;
+}
+
+#my-account-div {
+	color: #333333;
+}
+
+/* Slide Show IDs/Classes */
+
+#mySlides-1-title {
+	line-height: 1em;
+	padding-top: 2.5em;
+	padding-right: 2em;
+	padding-left: 1em;
+	color: #ffffff;
+	font-size: 5em;
+	text-align: right;
+	font-family: Gadugi Bold;
+	font-weight: bold;
+}
+
+#mySlides-2-title {
+	line-height: 1em;
+	padding-top: 2.5em;
+	padding-right: 2em;
+	padding-left: 1em;
+	color: #ffffff;
+	font-size: 5em;
+	text-align: right;
+	font-family: Gadugi Bold;
+	font-weight: bold;
+}
+
+#mySlides-2-title-no-bold {
+	font-family: Gadugi;
+	font-weight: none;
+	font-weight: none;
+}
+
+#mySlides-3-title {
+	line-height: 1em;
+	padding-top: 2.5em;
+	padding-right: 2em;
+	padding-left: 1em;
+	color: #ffffff;
+	font-size: 5em;
+	text-align: right;
+	font-family: Gadugi Bold;
+	font-weight: bold;
+}
+
+#mySlides-title-platform {
+	font-size: 0.25em;
+	padding-right: 2em;
+}
+
+@media only screen and (max-width: 800px){
+	
+	#mySlides-1-title {
+		text-align: right;
+		line-height: 1em;
+		padding-top: 2em;
+		padding-right: 0.25em;
+		padding-left: 0;
+		color: #ffffff;
+		font-size: 3.5em;
+		font-family: Gadugi Bold;
+		font-weight: bold;
+	}
+	
+	#mySlides-2-title {
+		text-align: right;
+		line-height: 1em;
+		padding-top: 2em;
+		padding-right: 0.25em;
+		padding-left: 0;
+		color: #ffffff;
+		font-size: 3.5em;
+		font-family: Gadugi Bold;
+		font-weight: bold;
+	}
+	
+	#mySlides-3-title {
+		text-align: right;
+		line-height: 1em;
+		padding-top: 2em;
+		padding-right: 0.25em;
+		padding-left: 0;
+		color: #ffffff;
+		font-size: 3.5em;
+		font-family: Gadugi Bold;
+		font-weight: bold;
+	}
+}
+
+.index_cover {
+    position: absolute;
+	display: table;
+    width: 100%; 
+    height: calc(100% - 3.5em); 
+	overflow: hidden;
+}
+
+.mySlides-1 {
+	background-image: url("/img/mySlides-1.jpg");
+	height: 100%;
+	transition: all 1s;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.mySlides-2 {
+	display: inline-block;
+	background-image: url("/img/mySlides-2.jpg");
+	height: 100%;
+	transition: all 1s;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+
+.mySlides-3 {
+	background-image: url("/img/mySlides-3.jpg");
+	height: 100%;
+	transition: all 1s;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.content {
+    position: absolute; 
+    width: 100%; 
+    top: calc(100% + 1em); 
+    height: auto;
+}
+
+.box_image {
+	width: 100%;
+}
+
+/* Open Platform Index */
+
+#open-parallax-img-1 {
+	background-image: url("/img/open-platform.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	padding: 1em;
+	text-align: center;
+	font-family: Gadugi Bold;
+	color: #ffffff;
+	height: 100%;
+	font-size: 5em;
+}
+
+#open-parallax-img-2 {
+	background-image: url("/img/coming-soon.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	padding: 1em;
+	text-align: center;
+	font-family: Gadugi Bold;
+	color: #ffffff;
+	height: 100%;
+	font-size: 5em;
+}
+
+#open-parallax-img-3 {
+	background-image: url("/img/open-platform-quick-start.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	text-align: center;
+	font-family: Gadugi Bold;
+	color: #ffffff;
+	height: 100%;
+	font-size: 5em;
+}
+
+#open-parallax-banner {
+	width: 100%;
+	background-color: #ffffff;
+	font-family: Gadugi Bold;
+	color: #10542c;
+	padding: 1em;
+	text-align: center;
+	padding-bottom: 3em;
+}
+
+@media only screen and (max-width: 800px){
+
+	#open-parallax-img-1 {
+		font-size: 2em;
+		padding-top: 4em;
+	}
+	
+	#open-parallax-img-1 h3 {
+		font-size: 0.5em;
+	}
+	
+	#open-parallax-img-2 {
+		font-size: 2em;
+		padding-top: 2em;
+	}
+	
+	#open-parallax-img-2 h3 {
+		font-size: 0.5em;
+	}
+	
+	#open-parallax-img-3 {
+		font-size: 2em;
+		padding-top: 2em;
+	}
+	
+	#open-parallax-img-3 h3 {
+		font-size: 0.5em;
+	}
+	
+}
+
+/* Open Platform Search */
+
+#open-search-form {
+	text-align: center;
+}
+
+#open-search-div {
+	max-width: 700px;
+	margin: auto;
+}
+
+#open-search-icon-div {
+	height: 100%;
+	background-color: #10542c;
+}
+
+#open-search-icon {
+	padding-top: 2.5px;
+	color: #ffffff;
+	height: 100%;
+	background-color: #10542c;
+}
+
+#open-search-btn {
+	border: 0;
+	height: 100%;
+	background-color: #10542c;
+}
+
+#open-search-a {
+	text-decoration: none;
+}
+
+#open-search-options {
+	font-size: 1em;
+	text-align: center;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	color: #10542c;
+	background-color: #ffffff;
+	font-family: Gadugi Bold;
+	transition: all 0.5s;
+	text-decoration: none;
+}
+
+#open-search-options:hover {
+	font-size: 1em;
+	text-align: center;
+	padding-top: 3em;
+	padding-bottom: 5em;
+	color: #10542c;
+	background-color: #ffffff;
+	font-family: Gadugi Bold;
+	text-decoration: none;
+}
+
+#open-search-icons {
+	font-size: 2em;
+}
+
+/* Footer IDs/Classes */
+
+#footer-nobr-logo {
+	color: #ffffff;
+}
+
+#footer {
+	background-color: #333333;
+	color: #000000;
+	border: 0;
+	height: 5em;
+	padding-top: 0.5em;
+}
+
+#footer-a-icon {
+	background-color: #333333;
+	color: #ffffff;
+}
+
+/* Coming soon body */
+
+#coming-soon-body {
+	background-image: url("/img/coming-soon.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	padding: 1em;
+}
+
+/* Create-account index IDs/Classes */
+
+#create-account-body {
+	background-image: url("/img/create-account.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	padding: 1em;
+}
+
+#create-account-title-text {
+	line-height: 1em;
+	font-family: Gadugi Bold;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 3em;
+	width: 100%;
+}
+
+#create-account-form {
+	line-height: 1em;
+}
+
+#create-account-form h2 {
+	font-family: Gadugi Bold;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#create-account-file-input-label {
+	background-color: #263b54;
+	color: #ffffff;
+	border-color: #263b54;
+}
+
+#create-account-default-preview-img {
+	height: 100px;
+	color: #ffffff;
+	font-size: 90px;
+}
+
+#create-account-submit-btn {
+	border: solid 5px #ffffff;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	font-size: 2em;
+	background-color: rgba(0, 0, 0, 0);
+	color: #ffffff;
+	font-family: Gadugi Bold;
+	font-weight: bold;
+}
+
+#create-account-a {
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 1000px){
+
+	#create-account-title-text {
+		line-height: 2em;
+		font-family: Gadugi Bold;
+		font-weight: bold;
+		color: #ffffff;
+		font-size: 10em;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* Query index IDs/Classes */
+
+#query-body {
+	background-image: url("/img/query.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	padding: 1em;
+}
+
+#query-title-text {
+	line-height: 1em;
+	font-family: Gadugi Bold;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 3em;
+	width: 100%;
+}
+
+#query-result-a {
+	text-decoration: none;
+}
+
+#query-admin-user {
+	text-decoration: none;
+	font-family: Gadugi;
+	color: #000000;
+}
+
+#query-result-div {
+	text-decoration: none;
+	font-family: Gadugi Bold;
+	color: #10542c;
+	transition: all 1s;
+}
+
+@media only screen and (min-width: 1000px){
+
+	#query-title-text {
+		line-height: 1.2em;
+		font-family: Gadugi Bold;
+		font-weight: bold;
+		color: #ffffff;
+		font-size: 5em;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* Table index IDs/Classes */
+
+#table-body {
+	background-image: url("/img/table.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	padding: 1em;
+}
+
+#table-title-text {
+	line-height: 1em;
+	font-family: Gadugi Bold;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 3em;
+	width: 100%;
+}
+
+@media only screen and (min-width: 1000px){
+
+	#table-title-text {
+		line-height: 1.2em;
+		font-family: Gadugi Bold;
+		font-weight: bold;
+		color: #ffffff;
+		font-size: 5em;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* Submit index IDs/Classes */
+
+#submit-heading {
+	color: #ffffff;
+	font-family: Gadugi Bold;
+	font-size: 1.2em;
+	padding-bottom: 0.2em;
+}
+
+#submit-body {
+	background-image: url("/img/submit.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	padding: 1em;
+}
+
+#submit-title-text {
+	line-height: 1em;
+	font-family: Gadugi Bold;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 3em;
+	width: 100%;
+}
+
+#submit-btn {
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	font-family: Gadugi Bold;
+	color: #ffffff;
+	margin: auto;
+	max-width: 250px;
+	font-size: 2em;
+}
+
+#submit-textarea {
+	resize: vertical;
+}
+
+@media only screen and (min-width: 1000px){
+
+	#submit-title-text {
+		line-height: 1.2em;
+		font-family: Gadugi Bold;
+		font-weight: bold;
+		color: #ffffff;
+		font-size: 7em;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* Create Archive index IDs/Classes */
+
+#create-archive-heading {
+	color: #ffffff;
+	font-family: Gadugi Bold;
+	font-size: 1.2em;
+	padding-bottom: 0.2em;
+}
+
+#create-archive-body {
+	background-image: url("/img/create-archive.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	padding: 1em;
+}
+
+#create-archive-title-text {
+	line-height: 1em;
+	font-family: Gadugi Bold;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 3em;
+	width: 100%;
+}
+
+@media only screen and (min-width: 1000px){
+
+	#create-archive-title-text {
+		line-height: 1.2em;
+		font-family: Gadugi Bold;
+		font-weight: bold;
+		color: #ffffff;
+		font-size: 5em;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+#create-archive-btn {
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	font-family: Gadugi Bold;
+	color: #ffffff;
+	margin: auto;
+	max-width: 250px;
+	font-size: 2em;
+}
+
+/* Maintenance index IDs/Classes */
+
+#maintenance-body {
+	background-image: url("/img/bigthings.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#maintenance-a {
+	text-decoration: none;
+}
+
+#maintenance-div {
+	font-family: Gadugi Bold;
+	font-weight: bold;
+	color: #ffffff;
+	width: 400px;
+	padding: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#maintenance-div h1 {
+	font-family: Gadugi Bold;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+@media only screen and (max-width: 600px){
+	
+	#maintenance-div {
+		font-family: Gadugi;
+		font-weight: bold;
+		color: #ffffff;
+		width: 90%;
+		padding: 5%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	#maintenance-div h1 {
+		font-family: Gadugi;
+		font-weight: bold;
+		color: #ffffff;
+	}
+}
+
+/* Sign in div */
+
+#fb_SignInButton {
+	background-color: #3B5998;
+	color: #ffffff;
+}
+
+#fb_SignInButton:hover {
+	background-color: #2A4887;
+	color: #ffffff;
+}
+
+#g_SignInButton {
+	background-color: #DD4B39;
+	color: #ffffff;
+}
+
+#g_SignInButton:hover {
+	background-color: #CC3A28;
+	color: #ffffff;
+}
+
+#tw_SignInButton {
+	background-color: #55ACEE;
+	color: #ffffff;
+}
+
+#tw_SignInButton:hover {
+	background-color: #449BDD;
+	color: #ffffff;
+}
+
+#sign-in-div {
+		top: 0;
+		left: 0;
+		z-index: 100;
+		background-color: #ffffff;
+		padding: 10%;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		border: solid 5% #ffffff;
+	}
+	
+	#sign-in-div h1 {
+		font-family: Gadugi Bold;
+		font-weight: bold;
+	}
+	
+	#sign-in-div div p {
+		line-height: 0.5em;
+	}
+	
+	#sign-in-div-esc-btn {
+		position: absolute;
+		top: 1em;
+		right: 1em;
+	}
+
+@media only screen and (min-width: 600px){
+	#sign-in-div {
+		z-index: 100;
+		border: solid 5px #dddddd;
+		background-color: #ffffff;
+		padding: 50px;
+		margin-top: -250px;
+		margin-left: -250px;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		width: 500px;
+		height: 550px;
+	}
+	
+	#sign-in-div h1 {
+		font-family: Gadugi Bold;
+		font-weight: bold;
+	}
+	
+	#sign-in-div div p {
+		line-height: 0.5em;
+	}
+	
+	#sign-in-div-esc-btn {
+		position: absolute;
+		top: 6px;
+		right: 6px;
+	}
+}

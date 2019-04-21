@@ -1,0 +1,484 @@
+<!--
+
+Cloud Thinker Software 2017
+File Directory: /
+
+-->
+
+<html>
+	<head>
+	
+		<!-- Link to jQuery library -->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Link to Bootstrap CDN (JS) -->
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+		<!-- Initialise Google Analytics (JS) -->
+		
+		<script src="/js/google_analytics_init.js"></script>
+		
+		<!-- Initialise Facebook SDK (JS) -->
+		
+		<script src="/js/fb_sdk_init.js"></script>
+
+		<!-- Firebase Script CDNs (JS) -->
+	
+		<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-messaging.js"></script>
+		<script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+		
+		<!-- Initialise Firebase (JS) -->
+		
+		<script src="/js/firebase_init.js"></script>
+		
+		<!-- Main Script (JS) -->
+		
+		<script src="/js/main.js"></script>
+		
+		<!-- Link to Firebase CDN (CSS) -->
+		
+		<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+		
+		<!-- Link to Cascading Style -->
+		
+		<link href="/css/style.css" type="text/css" rel="stylesheet"/>
+		
+		<!-- Link and Display Shortcut Icon -->
+		
+		<link rel="icon" href="/img/logo.png"/>
+		
+		<!-- Font Awesome CDN (CSS) -->
+		
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		
+		<!-- Link to Bootstrap CDN (CSS) -->
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!-- Link to Animation Styles (CSS) -->
+		
+		<link rel="stylesheet" href="/css/animations.css">
+		
+		<!-- Meta tags -->
+		
+		<meta name="google-signin-scope" content="profile email">
+		<meta name="google-signin-client_id" content="294179949419-81bq51mmqelbkn28udkh9lirsa0q7msi.apps.googleusercontent.com">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+	
+		<!-- Display Webpage Title -->
+		
+		<title>
+			cloud thinker - Data Management Solutions
+		</title>
+	</head>
+	
+	<!-- Body -->
+	
+	<body>
+		
+		<div id="div-blur">
+	
+			<!-- Navbar -->
+			
+			<nav id="nav" class="navbar navbar-inverted navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						<a class="navbar-brand" href="/">
+							<nobr id="navbar-nobr-logo">
+								<img src="/img/svg/logo.svg" height="100%"/>
+								cloud 
+								<strong id="navbar-strong-logo">
+									thinker
+								</strong>
+							</nobr>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li>
+								<a id="navbar-a-open" href="/open-platform/">
+									Open Platform
+								</a>
+							</li>
+							<li>
+								<a id="navbar-a-enterprise" href="/#dev-platform">
+									Developer Platform
+								</a>
+							</li>
+							<li>
+								<a id="navbar-a-academic" href="/#contact-us">
+									Contact us
+								</a>
+							</li>
+						</ul>
+						<ul id="nav-right-ul" class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#sign-in" onclick="signInVisibility()" id="nav-account">
+									<span class="glyphicon glyphicon-user">
+									</span>
+									Sign In 
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<!-- Content -->
+			
+			<div class="index_cover">
+				<div class="mySlides mySlides-1">
+					<div id="mySlides-1-title">
+						Web design made to impress
+					</div>
+				</div>
+				<div class="mySlides mySlides-2">
+					<div id="mySlides-2-title">
+							Go digital
+						</br>
+						<span id="mySlides-title-platform">
+							Developer
+							<span id="mySlides-2-title-no-bold">
+								Platform
+							</span>
+						</span>
+					</div>
+				</div>
+				<div class="mySlides mySlides-3">
+					<div id="mySlides-3-title">
+						Start exploring
+						</br>
+						<span id="mySlides-title-platform">
+							Open
+							<span id="mySlides-2-title-no-bold">
+								Platform
+							</span>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="content">
+				<div class="fluid-container">
+					<div class="container index-div animatedParent animatedOnce" id="open-platform">
+						<h1 class="animated fadeInRightShort" align="center" id="open-font">
+							Open
+							<span id="mySlides-2-title-no-bold">
+								Platform
+							</span>
+							beta 
+						</h1>
+						</br>
+						<form action="/open-platform/search" method="get" id="open-search-form">
+							<div id="open-search-div" class="input-group animated fadeInRight">
+								<input id="open-search-input" name="query" type="text" class="form-control" placeholder="Search our archives...">
+								<div id="open-search-icon-div" class="input-group-btn">
+									<button id="open-search-btn" class="btn btn-default" type="submit">
+										<span id="open-search-icon" class="glyphicon glyphicon-search">
+										</span>
+									</button>
+								</div>
+							</div>
+						</form>
+						<div class="row">
+							<a id="open-search-a" href="/open-platform/create-archive">
+								<div id="open-search-options" class="col-sm-4 animated fadeInLeft delay-50">
+									<span id="open-search-icons" class="glyphicon glyphicon-edit">
+									</span>
+									</br>
+									</br>
+									Create an Archive
+								</div>
+							</a>
+							<a id="open-search-a" href="#" onclick="myArchivesLinkSignInCheck();">
+								<div id="open-search-options" class="col-sm-4 animated fadeInLeft delay-150">
+									<span id="open-search-icons" class="glyphicon glyphicon-cloud">
+									</span>
+									</br>
+									</br>
+									My Archives
+								</div>
+							</a>
+							<a id="open-search-a" href="#contact-us">
+								<div id="open-search-options" class="col-sm-4 animated fadeInLeft delay-250">
+									<span id="open-search-icons" class="glyphicon glyphicon-comment">
+									</span>
+									</br>
+									</br>
+									Give us your feedback
+								</div>
+							</a>
+						</div>
+					</div>
+					<div id="index-email-form">
+						<div class="container">
+							<div class="row">
+								<h1 id="contact-us">
+									Contact us today!
+								</h1>
+								<h4 id="gadugi-bold">
+									If you have any queries about our software or other services, please feel free to get in touch!
+								</h4>
+							</div>
+							<div class="row" id="index-email-div">
+								<form action="/contact-us/send-email/" method="POST">
+									<div class="col-sm-2">
+									</div>
+									<div class="col-sm-8">
+										<h2>
+											Tell us your name
+										</h2>
+										<div id="create-account-displayName-group" class="form-group"  data-toggle="tooltip" data-placement="top" title="error">
+											<input class="form-control" type="text" placeholder="Enter your first name" name="name"/>
+											<div id="create-account-displayName-glyphicon">
+											</div>
+										</div>
+										<h2>
+											Enter your Email Address
+										</h2>
+										<div id="create-account-displayName-group" class="form-group"  data-toggle="tooltip" data-placement="top" title="error">
+											<input class="form-control" type="text" placeholder="Enter your Email Address" name="email"/>
+											<div id="create-account-displayName-glyphicon">
+											</div>
+										</div>
+										<h2>
+											Enter a Subject
+										</h2>
+										<div id="create-account-displayName-group" class="form-group"  data-toggle="tooltip" data-placement="top" title="error">
+											<input class="form-control" type="text" placeholder="Enter a subject" name="subject"/>
+											<div id="create-account-displayName-glyphicon">
+											</div>
+										</div>
+										<h2>
+											What do you want to tell us?
+										</h2>
+										<div id="create-account-displayName-group" class="form-group"  data-toggle="tooltip" data-placement="top" title="error">
+											<textarea class="form-control" id="submit-textarea" type="text" name="message"></textarea>
+											<div id="create-account-displayName-glyphicon">
+											</div>
+										</div>
+										<input class="form-control" id="create-account-file-input-label" type="submit" value="Send">
+									</div>
+									<div class="col-sm-2">
+									</div>
+								</form>
+							</div>
+						</div>
+						</br>
+					</div>
+					<div class="container index-div animatedParent">
+						<div class="row" id="dev-platform">
+							<h1 id="dev-font" class="animated fadeInRightShort" align="center">
+								Developers
+								<span id="mySlides-2-title-no-bold">
+									Platform
+								</span>
+								<span class="animated fadeIn" style="color: #bbbbbb;">
+									Coming in Early June
+								</span>
+							</h1>
+						</div>
+						</br>
+						<div class="row">
+							<div class="col-sm-6">
+								<img class="animated fadeInLeftShort" src="/img/dev-platform-img.png" width="100%"/>
+							</div>
+							<div class="col-sm-6">
+								</br>
+								<p class="animated fadeInLeftShort delay-50">
+									Our <span id="dev-font" align="center">
+										Developers
+										<span id="mySlides-2-title-no-bold">
+											Platform
+										</span>
+									</span>
+									will take all the work out of embedding a data managing feature to your site.
+								</p>
+								</br>
+								<p class="animated fadeInLeftShort delay-150">
+									Quickly go digital with you or your client's local business or organisation with our intuitive developer tools.
+ 								</p>
+								</br>
+								<p class="animated fadeInLeftShort delay-250">
+									Our unique software enables you to connect your client to their site using our web or android platforms and from there, upload any relevant data through our simple user interface.
+								</p>
+								</br>
+								<p class="animated fadeInLeftShort delay-500">
+									Less time spent on data management
+									</br>
+									<span id="dev-font">
+										More time for the important stuff
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					</br>
+				</div>
+				
+				<!-- Footer -->
+				
+				<nav id="footer" class="footer navbar-inverted navbar-static-bottom">
+					<div class="container">
+						<div class="footer-header">
+							<a class="navbar-brand" href="#">
+								<nobr id="footer-nobr-logo">
+									<img src="/img/svg/inverted_logo.svg" height="100%"/>
+									cloud 
+									<strong id="footer-strong-logo">
+										thinker
+									</strong>
+								</nobr>
+							</a>
+						</div>
+						<div class="collapse navbar-collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a id="footer-a-icon" href="https://twitter.com/CT_Software_">
+										<img src="/img/svg/twitter.svg" height="50%"/>
+									</a>
+								</li>
+								<li>
+									<a id="footer-a-icon" href="https://facebook.com/cloudthinkersoftware">
+										<img src="/img/svg/facebook-square.svg" height="50%"/>
+									</a>
+								</li>
+								<li>
+									<a id="footer-a-icon" href="https://www.instagram.com/cloudthinkersoftware/">
+										<img src="/img/svg/instagram.svg" height="50%"/>
+									</a>
+								</li>
+								<li>
+									<a id="footer-a-icon" href="/coming-soon/">
+										<img src="/img/svg/android.svg" height="50%"/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		
+		<!-- Hidden Elements -->
+		
+		<script>
+			var slideIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+				  x[i].style.display = "none"; 
+				}
+				slideIndex++;
+				if (slideIndex > x.length) {slideIndex = 1} 
+				x[slideIndex-1].style.display = "block"; 
+				setTimeout(carousel, 7500);
+			}
+			
+			function carouselCaptions() {
+				var i;
+				var x = document.getElementsByClassName("carousel-captions");
+				for (i = 0; i < x.length; i++) {
+				  x[i].style.display = "none"; 
+				}
+				slideIndex++;
+				if (slideIndex > x.length) {slideIndex = 1} 
+				x[slideIndex-1].style.display = "block"; 
+				setTimeout(carousel, 7500);
+			}
+		</script>
+		
+		<div id="sign-in-div">
+			<div id="sign-in-div-esc-btn" class="glyphicon glyphicon-remove" onclick="signInVisibility(); endScreenBlur();">
+			</div>
+			<div class="row">
+				<h1 id="sign-intitle" align="center">
+					Sign in
+					<span class="glyphicon glyphicon-log-in">
+					</span>
+				</h1>
+			</div>
+			<div class="row">
+				<p>
+					</br>
+					<div id="sign-in-email-group" class="form-group"  data-toggle="tooltip" data-placement="top" title="error">
+						<input id="email" class="form-control" type="text" width="100%" placeholder="Email">
+						<div id="sign-in-email-glyphicon">
+						</div>
+					</div>
+					<div id="sign-in-password-group" class="form-group"  data-toggle="tooltip" data-placement="top" title="error">
+						<input id="password" class="form-control" type="password" width="100%" placeholder="Password">
+						<div id="sign-in-password-glyphicon">
+						</div>
+					</div>
+					<button disabled id="e_SignInButton" class="btn btn-primary btn-md btn-block">
+						Sign in
+					</button>
+					</br>
+					<div data-toggle="collapse" data-target="#signInHelp" id="a-no-dec">
+						<b>
+							Having trouble signing in?
+						</b>
+					</div>
+					<div id="signInHelp" class="collapse">
+						Reset your password
+						<a href="/reset-password/">
+							here
+						</a>
+						</br>
+						Create an account
+						<a href="/create-account/">
+							here
+						</a>
+					</div>
+				</p>
+				<hr>
+				</hr>
+				<p>
+					<button disabled class="btn btn-block" id="fb_SignInButton">
+						<span class="fa fa-facebook">
+						</span>
+						Log in with Facebook
+					</button>
+					</br>
+					<button disabled class="btn btn-block" id="g_SignInButton">
+						<span class="fa fa-google">
+						</span> 
+						Log in with Google
+					</button>
+					</br>
+					<button disabled class="btn btn-block" id="tw_SignInButton">
+						<span class="fa fa-twitter">
+						</span>
+						Log in with Twitter
+					</button>
+					</br>
+				</p>
+			</div>
+		</div>
+		
+		<!-- Animations Script (JS) -->
+		
+		<script src="/js/animations.js"></script>
+	</body>
+</html>
